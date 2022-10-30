@@ -1,0 +1,357 @@
+// @media (max-width: 1200px)
+// @media (max-width: 991px)
+// @media (max-width: 767px)
+// @media (max-width: 575px)
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .main {
+        width: 540px;
+        min-height: 609px;
+        &__header {
+            height: 44px;
+            .indicator {
+                height: 30px;
+                width: 352px;
+                &__item {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    
+        &__logo {
+            display: block;
+            width: 130px;
+            height: 30px;
+        }
+        
+        &__tasks {
+            margin-top: 20px;
+            height: 360px;
+            ul {
+                padding: 0;
+                list-style-type: none;
+                height: 100%;
+                .list__item {
+                    width: 98%;
+                    height: 61px;
+
+                    }
+                }
+            }
+    
+        
+    
+        &__input {
+            width: 540px;
+            height: 53px;
+            input {
+                width: 90%;
+                height: 53px;
+            }
+        }
+    
+        &__button {
+            width: 10%;
+            height: 53px;
+        }
+    
+    }
+
+    .notes {
+        width: 390px;
+        height: 575px;
+        &__logo {
+            width: 74px;
+            height: 29px;
+        }
+        textarea {
+            width: 100%;
+            height: 332px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .main {
+        width: 418px;
+        min-height: 471px;
+        &__header {
+            height: 34px;
+            .indicator {
+                height: 23px;
+                width: 272px;
+                &__item {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    
+        &__logo {
+            width: 100px;
+            height: 23px;
+        }
+        
+        &__tasks {
+            height: 278px;
+            ul {
+                height: 100%;
+                .list__item {
+                    width: 98%;
+                    height: 47px;
+                    span {
+                        font-size: 15px;
+                    }
+
+                    }
+                }
+            }
+    
+        
+    
+        &__input {
+            width: 418px;
+            height: 43px;
+            input {
+                width: 90%;
+                height: 43px;
+            }
+        }
+    
+        &__button {
+            width: 10%;
+            height: 43px;
+        }
+    
+    }
+
+    .notes {
+        width: 300px;
+        height: 445px;
+        &__logo {
+            width: 57px;
+            height: 23px;
+        }
+        textarea {
+            width: 100%;
+            height: 257px;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .container {
+        justify-content: center;
+    }
+    .main {
+        width: 100vw;
+        min-height: 471px;
+        &__header {
+            height: 68px;
+            flex-direction: column;
+
+            .indicator {
+                height: 23px;
+                width: 272px;
+                &__item {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    
+        &__logo {
+            width: 100px;
+            height: 23px;
+        }
+        
+        &__tasks {
+            height: 300px;
+            ul {
+                height: 100%;
+                .list__item {
+                    width: 100%;
+                    height: 47px;
+                    .check {
+                        width: 15px;
+                        height: 15px;
+                        margin-top: 15px;
+                        margin-left: 18px;
+                    }
+                    .text {
+                        height: 53px;
+                        font-size: 15px;
+                    }
+                    .important {
+                        width: 20px;
+                        height: 20px;
+                        right: 55px;
+                        top: 14px;
+                    }
+                    .delete {
+                        width: 20px;
+                        height: 20px;
+                        right: 18px;
+                        top: 14px;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    
+        
+    
+        &__input {
+            width: 100vw;
+            height: 43px;
+            input {
+                width: 90%;
+                height: 43px;
+                font-size: 15px;
+            }
+        }
+    
+        &__button {
+            width: 10%;
+            height: 43px;
+            font-size: 15px;
+        }
+    
+    }
+
+    .notes {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    textarea {
+        width: 100%;
+        height: 47px;
+        border-radius: 20px;
+        padding: 10px;
+        transition: 2s all;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        justify-content: center;
+    }
+    .main {
+        width: 100vw;
+        min-height: 471px;
+        &__header {
+            height: 68px;
+            flex-direction: column;
+
+            .indicator {
+                height: 23px;
+                width: 272px;
+                &__item {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    
+        &__logo {
+            width: 100px;
+            height: 23px;
+        }
+        
+        &__tasks {
+            height: 278px;
+            ul {
+                height: 100%;
+                .list__item {
+                    width: 100%;
+                    height: 47px;
+                    .check {
+                        width: 15px;
+                        height: 15px;
+                        margin-top: 15px;
+                        margin-left: 18px;
+                    }
+                    .text {
+                        height: 53px;
+                        font-size: 15px;
+                    }
+                    .important {
+                        width: 20px;
+                        height: 20px;
+                        right: 55px;
+                        top: 14px;
+                    }
+                    .delete {
+                        width: 20px;
+                        height: 20px;
+                        right: 18px;
+                        top: 14px;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    
+        
+    
+        &__input {
+            width: 100vw;
+            height: 43px;
+            input {
+                width: 90%;
+                height: 43px;
+                font-size: 15px;
+            }
+        }
+    
+        &__button {
+            width: 10%;
+            height: 43px;
+            font-size: 15px;
+        }
+    
+    }
+
+    .notes {
+        display: none;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 47px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <div class="main__header">
+                <img src="img/logo.png" alt="logo" class="main__logo">
+                <div class="indicator">
+                    <div class="indicator__item"><img src="icons/done.png" alt="done"><span class="done_text"></span></div>
+                    <div class="indicator__item"><img src="icons/important.png" alt="important"><span class="important_text"></span></div>
+                    <div class="indicator__item"><img src="icons/note.png" alt="total"><span class="total_text"></span></div>
+                </div>
+            </div>
+            <div class="main__tasks" data-simplebar>
+                <ul class="main__list" >
+                    <li class="list__item"><div class="check"></div><span class="text">Купить хлеб</span><img src="icons/important.png" alt="important" class="important"><img src="icons/delete.png" alt="delete" class="delete"></li>
+
+                    <li class="list__item"><div class="check"></div><span class="text">Тренировка</span><img src="icons/important.png" alt="important" class="important"><img src="icons/delete.png" alt="delete" class="delete"></li>
+
+                    <li class="list__item"><div class="check"></div><span class="text">Написать ТЗ к заданию</span><img src="icons/important.png" alt="important" class="important"><img src="icons/delete.png" alt="delete" class="delete"></li>
+
+                    <li class="list__item"><div class="check"></div><span class="text">Купить хлеб</span><img src="icons/important.png" alt="important" class="important"><img src="icons/delete.png" alt="delete" class="delete"></li>
+
+                    <li class="list__item"><div class="check"></div><span class="text">Тренировка</span><img src="icons/important.png" alt="important" class="important"><img src="icons/delete.png" alt="delete" class="delete"></li>
+
+                </ul>
+            </div>
+            <div class="main__input">
+                <button class="main__button">+</button>
+                <input type="text" placeholder="Добавить задание">
+            </div>
+        </section>
+        <section class="notes">
+            <img src="img/Notes.png" alt="Notes" class="notes__logo">
+            <textarea class="text-click" name="" id="" cols="30" rows="10" placeholder="Нажмите на задания для создания заметки" data-simplebar readonly></textarea>
+        </section>
+    </div>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
